@@ -7,7 +7,6 @@ from Utilities.constants import *
 
 @pytest.mark.usefixtures("setup_and_teardown")
 class TestSwipe:
-
     @pytest.fixture(autouse=True)
     def classSetup(self, setup_and_teardown):
         self.swipe = Swipe(self.driver)
